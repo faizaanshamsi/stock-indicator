@@ -1,0 +1,12 @@
+<h2>New Stock</h2>
+<ul class="stock-publish">
+  <li>
+    {{input value=stock.symbol placeholder="Symbol"}}
+  </li>
+  <li>
+    {{input value=stock.price placeholder="Price"}}
+  </li>
+  <li>
+    <button {{action "publishStock" stock}}>Publish</button>
+  </li>
+</ul>
