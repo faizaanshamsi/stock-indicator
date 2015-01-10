@@ -1,0 +1,9 @@
+{
+  "firebase": "stock-indicator",
+  "public": "dist/",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
