@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route("stocks", function() {
+  this.route("stocks", { path: "/" } ,function() {
     this.route("new");
   });
 });
