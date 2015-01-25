@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember.js</h2>
-
-{{outlet}}
+<form>
+  {{#if auth.authed}}
+    <h4> Congratulations! You are logged in!</h4>
+    <h4> Would you like to logout?</h4>
+    <button {{ action 'logout' this }}>Logout</button>
+    {{outlet}}
+  {{else}}
+    <h4> Please login</h4>
+    <button {{ action 'login' this }}>Login</button>
+  {{/if}}
+</form>
