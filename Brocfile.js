@@ -8,6 +8,8 @@ var app = new EmberApp({
   }
 });
 
+app.import('bower_components/gridforms/gridforms/gridforms.js');
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

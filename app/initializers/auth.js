@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import ENV from 'stock-indicator/config/environment';
 
-console.log(ENV.FIREBASE_URL);
 var ref = new window.Firebase(ENV.FIREBASE_URL);
 
 export function initialize(container, app) {
