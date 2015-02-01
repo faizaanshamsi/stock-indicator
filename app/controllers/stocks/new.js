@@ -8,8 +8,8 @@ export default Ember.Controller.extend({
       var _this = this;
       stock.set('timestamp', new Date());
       stock.save().then(function() {
-        _this.transitionToRoute('stocks.index')
-      })
+        _this.transitionToRoute('stocks.index');
+      });
     }
   }
 });

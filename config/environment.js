@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    FIREBASE_URL: process.env.FIREBASE_URL,
     modulePrefix: 'stock-indicator',
     environment: environment,
     baseURL: '/',

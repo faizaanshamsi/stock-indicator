@@ -1,6 +1,8 @@
 import Ember from 'ember';
+import ENV from 'stock-indicator/config/environment';
 
-var ref = new window.Firebase("https://stock-indicator.firebaseio.com/");
+console.log(ENV.FIREBASE_URL);
+var ref = new window.Firebase(ENV.FIREBASE_URL);
 
 export function initialize(container, app) {
   app.register('auth:main', auth, { singleton: true });
@@ -21,7 +23,7 @@ var auth = Ember.Object.extend({
       this.set("authed", true);
       this.set("authData", authData);
       // return this.afterAuthentication(authData.uid);
-    }.bind(this));;
+    }.bind(this));
   },
 
   // afterAuthentication: function(userId) {
@@ -29,12 +31,14 @@ var auth = Ember.Object.extend({
   // },
 
   login: function() {
-    console.log('anything')
-    ref.authWithOAuthRedirect("twitter", function(error, authData){});
+    console.log('login');
+    ref.authWithOAuthRedirect("twitter", function(error, authData){
+      //should do something here
+    });
   },
 
   logout: function() {
-    ref.unauth()
+    ref.unauth();
   }
 });
 
