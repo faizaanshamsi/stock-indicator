@@ -2,7 +2,6 @@
   "name": "stock-indicator",
   "dependencies": {
     "handlebars": "2.0.0",
-    "jquery": "^1.11.1",
     "ember": "1.9.1",
     "ember-data": "1.0.0-beta.12",
     "ember-resolver": "~0.1.11",
@@ -13,6 +12,12 @@
     "ember-qunit": "0.1.8",
     "ember-qunit-notifications": "0.0.4",
     "qunit": "~1.15.0",
-    "emberfire": "~1.3.1"
+    "emberfire": "~1.3.1",
+    "flakes": "~1.0.0",
+    "jquery": "~2.1.3",
+    "gridforms": "~1.0.4"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
   }
 }
