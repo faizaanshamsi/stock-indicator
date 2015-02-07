@@ -90,7 +90,6 @@
 
 ## Server
 
-
 ### Badass Go? servers(x100)
 
 * Beginning of day: load computed closing values into memory from RDS Postgres
@@ -109,3 +108,11 @@
 
 * Gets pushed signals from firebase realtime
 * Client side calculations for UI behavior
+
+# Signal Structure
+
+* Ticker
+* Name
+* Timestamp
+* Current tick price
+* Direction
