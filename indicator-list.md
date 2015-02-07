@@ -92,13 +92,13 @@
 
 ### Badass Go? servers(x100)
 
-* Beginning of day: load computed closing values into memory from RDS Postgres
+* Beginning of day: load computed closing values into memory from RDS Postgres (firebase for now)
 * Streaming - Read in stock data from Tradier
 * Calculate Signals for each stock against all indicators and push to firebase
 
 ### Ruby server
 
-* 8 p.m. EST - Get day's closing prices, append computed closing values with newly calculated data into RDS Postgres
+* 8 p.m. EST - Get day's closing prices, append computed closing values with newly calculated data into RDS postgres (firebase for now)
 
 ## Firebase
 
